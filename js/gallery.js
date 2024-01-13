@@ -95,16 +95,6 @@ function onGalleryItemClick(event) {
   }
 
   const largeImageUrl = event.target.dataset.source;
-}
-
-function onGalleryItemClick(event) {
-  event.preventDefault();
-
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-
-  const largeImageUrl = event.target.dataset.source;
 
   const instance = basicLightbox.create(`
     <img src="${largeImageUrl}" width="800" height="600">
